@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="36dp"
-        android:text="Lorna Kamau"
+        tools:text="Lorna Kamau"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/ivContactImage"
         app:layout_constraintTop_toTopOf="parent" />
@@ -42,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="+25423907612"
+        tools:text="+25423907612"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/ivPhoneNumber"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginTop="13dp"
-        android:text="lornak@gmail.com"
+        tools:text="lornak@gmail.com"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/ivEmail"
         app:layout_constraintTop_toBottomOf="@+id/tvNumber" />

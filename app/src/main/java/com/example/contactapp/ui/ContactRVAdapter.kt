@@ -10,6 +10,7 @@ import com.example.contactapp.model.ContactData
 import com.example.contactapp.databinding.ContactListItemBinding
 import com.squareup.picasso.Picasso
 import jp.wasabeef.picasso.transformations.CropCircleTransformation
+import java.io.File
 
 class ContactRVAdapter(var contactList: List<ContactData>, val context: Context): RecyclerView.Adapter<ContactViewHolder>() {
 
@@ -29,7 +30,7 @@ class ContactRVAdapter(var contactList: List<ContactData>, val context: Context)
 
                 Picasso
                     .get()
-                    .load(contactsDetails.image)
+                    .load(File(contactsDetails.image))
                     .resize(80, 80)
                     .centerCrop()
                     .transform(CropCircleTransformation())
